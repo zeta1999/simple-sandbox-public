@@ -15,3 +15,4 @@
 - [ ] Real host capacity probe (limited-core preflight is static)
 - [ ] Linux-on-Linux + bubblewrap; libkrun
 - [ ] Wire or drop unused `ControlChannel` / `simple_network`
+- [x] Run tests and CI on **linux/arm64** and **linux/amd64** via Docker on Mac (QEMU for amd64)

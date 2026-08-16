@@ -348,7 +348,7 @@ async fn cmd_run(
     memory: Option<String>,
     command: Vec<String>,
 ) -> Result<u8> {
-    let name = name.unwrap_or_else(|| format!("run-{}", &uuid_simple()));
+    let name = name.unwrap_or_else(|| format!("run-{}", uuid_simple()));
     let mut policy = load_policy(policy_path, cpus, memory, mechanism)?;
     let kind = resolve_mechanism(policy.mechanism_or_auto());
     // On macOS prefer mac for quick local runs if podman unavailable
