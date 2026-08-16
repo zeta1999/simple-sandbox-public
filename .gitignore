@@ -1,0 +1,9 @@
+/target
+**/*.rs.bk
+.DS_Store
+*.swp
+.env
+.env.*
+
+# Large third-party reference trees (local only)
+vms_v2/refs/

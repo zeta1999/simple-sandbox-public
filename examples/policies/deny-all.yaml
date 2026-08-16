@@ -1,0 +1,10 @@
+version: 1
+filesystem:
+  workdir: true
+  read_only: []
+  read_write: ["/workspace", "/tmp"]
+network:
+  mode: none
+resources:
+  cpus: 1
+  memory: 512M

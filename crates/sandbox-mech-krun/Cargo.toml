@@ -1,0 +1,12 @@
+[package]
+name = "sandbox-mech-krun"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "libkrun microVM sandbox mechanism (stub for v1)"
+
+[dependencies]
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+sandbox-core = { workspace = true }
+sandbox-policy = { workspace = true }

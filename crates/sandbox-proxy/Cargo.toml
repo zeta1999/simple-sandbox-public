@@ -1,0 +1,16 @@
+[package]
+name = "sandbox-proxy"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Unprivileged HTTP CONNECT allowlist proxy"
+
+[dependencies]
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+serde = { workspace = true }
+
+[dev-dependencies]
+tokio = { workspace = true, features = ["test-util", "macros"] }

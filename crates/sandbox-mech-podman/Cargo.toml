@@ -1,0 +1,16 @@
+[package]
+name = "sandbox-mech-podman"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Rootless Podman/Colima Linux arm64 sandbox mechanism"
+
+[dependencies]
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+which = { workspace = true }
+tokio = { workspace = true }
+sandbox-core = { workspace = true }
+sandbox-policy = { workspace = true }
+sandbox-proxy = { workspace = true }

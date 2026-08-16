@@ -1,0 +1,19 @@
+[package]
+name = "sandbox-mech-mac"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "macOS seatbelt sandbox mechanism (no sudo)"
+
+[dependencies]
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+libc = { workspace = true }
+dirs = { workspace = true }
+tempfile = { workspace = true }
+sandbox-core = { workspace = true }
+sandbox-policy = { workspace = true }
+sandbox-proxy = { workspace = true }
+serde_yaml = { workspace = true }
+tokio = { workspace = true }

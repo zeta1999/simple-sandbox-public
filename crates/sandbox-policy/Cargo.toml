@@ -1,0 +1,18 @@
+[package]
+name = "sandbox-policy"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "YAML sandbox policy schema and limited-core preflight"
+
+[dependencies]
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+serde = { workspace = true }
+serde_yaml = { workspace = true }
+sha2 = { workspace = true }
+hex = { workspace = true }
+limited-core = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }

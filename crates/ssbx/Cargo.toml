@@ -1,0 +1,29 @@
+[package]
+name = "ssbx"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Agent-ready sandbox CLI"
+default-run = "ssbx"
+
+[[bin]]
+name = "ssbx"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = { workspace = true }
+clap = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+serde_yaml = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+dirs = { workspace = true }
+sandbox-core = { workspace = true }
+sandbox-policy = { workspace = true }
+sandbox-proxy = { workspace = true }
+sandbox-mech-podman = { workspace = true }
+sandbox-mech-mac = { workspace = true }
+sandbox-mech-krun = { workspace = true }
+secure-memory = { workspace = true }
